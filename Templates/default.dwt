@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Cranbrook Colourstrings</title>
+<!-- TemplateEndEditable -->
+<link href="../css/default.css" rel="stylesheet" type="text/css" />
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+<body>
+<div id="wrap">
+  <div id="head"><img src="../images/header.jpg" width="996" height="100" alt="Cranbrook Colourstrings" />
+    <h1>Cranbrook Colourstrings</h1>
+    <p class="tag">inspiring musical learning for the very young</p>
+    <h2>call Ingrid 01580 720135 or email <a href="&#109;&#97;&#105;&#108;&#116;&#111;:&#x69;&#x6E;&#x66;&#111;&#64;&#x63;&#114;&#x61;&#x6E;&#x62;&#114;&#111;&#x6F;&#x6B;&#99;&#x6F;&#x6C;&#111;&#x75;&#114;&#x73;&#x74;&#114;&#x69;&#110;&#103;&#x73;&#x2E;&#99;&#111;&#x2E;&#x75;&#x6B;?subject=&#69;&#x6E;&#x71;&#117;&#x69;&#x72;&#x79;&#32;&#102;&#x72;&#111;&#x6D;&#x20;&#x74;&#104;&#101;&#32;&#67;&#111;&#108;&#111;&#x75;&#x72;&#x73;&#x74;&#114;&#105;&#x6E;&#103;&#115;&#32;&#x77;&#x65;&#x62;&#115;&#x69;&#116;&#101;" title="&#80;&#x6C;&#101;&#97;&#x73;&#101;&#x20;&#99;&#111;&#x6E;&#x74;&#x61;&#99;&#116;&#x20;&#x43;&#x72;&#x61;&#110;&#x62;&#x72;&#111;&#x6F;&#x6B;&#x20;&#67;&#111;&#108;&#111;&#117;&#114;&#x73;&#116;&#114;&#105;&#110;&#103;&#115;">&#x69;&#x6E;&#102;&#x6F;&#x40;&#99;&#x72;&#97;&#x6E;&#x62;&#114;&#x6F;&#111;&#107;&#x63;&#111;&#108;&#111;&#117;&#114;&#x73;&#x74;&#114;&#105;&#110;&#103;&#x73;&#46;&#99;&#x6F;&#46;&#x75;&#107;</a></h2>
+    <!--end head div-->
+  </div>
+  <!-- #BeginLibraryItem "/Library/topNav.lbi" -->
+  <div id="topNav">
+    <ul>
+      <li><a href="../index.html" class="blue">Home</a></li>
+      <li><a href="../about_colourstrings.html" class="orange">About</a></li>
+      <li><a href="../colourstrings_classes.html" class="green">Classes</a></li>
+      <li><a href="../colourstrings_teachers.html" class="red">Teachers</a></li>
+      <li><a href="../colourstrings_books_cds.html" class="green">Books &amp; CDs</a></li>
+      <li><a href="../contact_colourstrings.html" class="orange">Contact</a></li>
+      <li><a href="../colourstrings_news.html" class="blue">News</a></li>
+    </ul>
+    <!--end topNav div-->
+  </div>
+  <!-- #EndLibraryItem --><!-- TemplateBeginEditable name="Main" -->
+  <div id="main">
+    <div class="floatRight"><img src="../images/logo.jpg" width="400" height="317" alt="Colourstrings Children" title="DO-RE-MI-FA-SO-LA-TI-DO" />
+      <!--end floatRight div-->
+    </div>
+    <p>Welcome to <strong>Cranbrook Colourstrings</strong>, our Music Kindergarten
+      for babies, toddlers and children up to 7 years. Here young children can
+      enjoy inspiring musical learning led by professional musicians who are
+      trained specialists in Colourstrings teaching. <a href="#">Colourstrings
+      teaching</a> has an outstanding international reputation and is based on
+      the principles of the composer and teacher Zoltán Kodály.</p>
+    <p>In small, age-related groups children learn to develop their pitch, rhythm
+      and inner hearing through games and activities using traditional folk songs
+      and classical music. Singing, rhythm games, movement to music, playing
+      tuned and untuned percussion instruments, listening to music, performing,
+      composing and improvising all form part of our exciting approach to musical
+      learning.</p>
+    <p>Our Music Kindergarten provides the foundation for the instrumental tuition
+      programme that we offer for violin and cello. This programme is open to
+      children who have completed at least two years of Music Kindergarten training.</p>
+    <div class="clear" id="testimonials"><img src="../images/startquote.gif" width="32" height="39" alt="Start quote" />
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        augue velit, accumsan quis, ultrices a, fringilla at, elit. Vivamus libero
+        erat, blandit quis, commodo eget, pellentesque vel, tortor. Nam n lorems.<img src="../images/endquote.gif" alt="End quote" width="32" height="39" align="right" /></p>
+      <br />
+      <p class="sig">Jane R, Tenterden</p>
+    </div>
+    <hr align="center" width="100%" size="1" noshade="noshade" />
+    <!--end main div-->
+  </div>
+  <!-- TemplateEndEditable -->
+  <div id="footer">
+    <p>&copy; Cranbrook Colourstrings <script type="text/javascript">var d=new Date();document.write(d.getFullYear());</script>. All rights reserved. <strong><a href="../your_privacy_cookies.html">Your privacy and cookies</a></strong>.</p>
+    <!--end footer div-->
+  </div>
+  <!--end wrap div-->
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-375917-55");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

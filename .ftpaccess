@@ -1,0 +1,5 @@
+<Limit ALL>
+DenyALL
+Allow 127.0.0.1
+Allow 81.157.15.28
+</Limit>
