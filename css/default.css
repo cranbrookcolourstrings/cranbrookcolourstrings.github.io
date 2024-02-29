@@ -20,9 +20,17 @@ body {
 	padding-bottom: 10px;
 }
 #head h1 {
-	font-size: 1%;
-	text-indent: -10000px;
-	float: left;
+	
+	font-family: Arial, sans-serif; 
+	// bold
+	font-weight: bold;
+	font-size: 5em; /* Enlarged for visibility */
+background: linear-gradient(to right, #350596, #2F30D0, #029F00, #E6F500, #FF8400,  #FF1800);      -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	margin: 0 auto; /* Center the text */
+	text-align: center;
+	width: fit-content; /* Prevent stretching */
+	-webkit-text-stroke: 2px #949990; /* Adjust thickness as needed */
 }
 #head h2 {
 	font-size: 100%;
