@@ -1,252 +1,413 @@
-h1, h2, h3, h4, h5, h6, body, img, div, a, p, ol, ul, li, form, br, hr {
-	margin: 0px;
-	padding: 0px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body,
+img,
+div,
+a,
+p,
+ol,
+ul,
+li,
+form,
+br,
+hr {
+  margin: 0px;
+  padding: 0px;
 }
 body {
-	font: 80%/1.4 Verdana, Geneva, sans-serif;
-	color: #333;
-	background: url(../images/outerBg.jpg) repeat-x;
-	padding-top: 15px;
+  font: 80%/1.4 Verdana, Geneva, sans-serif;
+  color: #333;
+  background: url(../images/outerBg.jpg) repeat-x;
+  padding-top: 16px;
+  display: flex;
+  justify-content: center;
 }
+
 #wrap {
-	width: 996px;
-	margin-right: auto;
-	margin-left: auto;
-	background: #FFF;
-	border: 1px solid #64965a;
+  max-width: 996px;
+
+  background: white;
+  border: 1px solid #64965a;
 }
 #head {
-	text-align: center;
-	padding-bottom: 10px;
+  text-align: center;
+  padding-bottom: 10px;
 }
-#head h1 {
-	
-	font-family: Arial, sans-serif; 
-	// bold
-	font-weight: bold;
-	font-size: 5em; /* Enlarged for visibility */
-background: linear-gradient(to right, #350596, #2F30D0, #029F00, #E6F500, #FF8400,  #FF1800);      -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent; 
-	margin: 0 auto; /* Center the text */
-	text-align: center;
-	width: fit-content; /* Prevent stretching */
-	-webkit-text-stroke: 2px #949990; /* Adjust thickness as needed */
+.logo {
+  font-family: Arial, sans-serif;
+  // bold
+  font-weight: bold;
+  font-size: 5em; /* Enlarged for visibility */
+  background: linear-gradient(
+    to right,
+    #350596,
+    #2f30d0,
+    #029f00,
+    #e6f500,
+    #ff8400,
+    #ff1800
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 auto; /* Center the text */
+  width: fit-content; /* Prevent stretching */
+  -webkit-text-stroke: 2px #949990; /* Adjust thickness as needed */
+
+  font-weight: bold;
+  text-align: center;
 }
-#head h2 {
-	font-size: 100%;
-	color: #333;
-	font-weight: normal;
-	padding-top: 15px;
-	padding-bottom: 15px;
+header h2 {
+  font-size: 100%;
+  color: #333;
+  font-weight: normal;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
-#head h2 a {
-	color: #333;
-	text-decoration: none;
+header h2 a {
+  color: #333;
+  text-decoration: none;
 }
-#head h2 a:hover {
-	color: #00F;
+header h2 a:hover {
+  color: #00f;
+}
+
+.burger-menu {
+  display: none;
+}
+
+#menu {
+  display: block;
 }
 
 
-#topNav {
-	text-align: center;
-	font-size: 120%;
+
+nav {
+  font-size: 120%;
+  padding: 5px 50px;
 }
-#topNav ul {
-	list-style: none;
-	padding-top: 5px;
-	padding-bottom: 5px;
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 0.5em;
+  justify-content: space-between;
 }
+nav ul li a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
 #topNav ul li {
-	display: inline;
-	padding-right: 20px;
-	padding-left: 20px;
+  display: inline;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 #topNav ul li a {
-	font-weight: bold;
-	text-decoration: none;
+  font-weight: bold;
+  text-decoration: none;
 }
 #topNav ul li a:hover {
-	color: #03C;
+  color: #03c;
 }
-#main {
-	padding-top: 50px;
-	margin-right: 50px;
-	margin-left: 50px;
+
+main {
+  display: grid;
+  padding: 50px 50px 0px 50px;
+  grid-template-columns: repeat(12, 1fr); /* Creates a 12-column grid */
+  gap: 16px; /* Sets the gap between grid items */
 }
-#wrap #main h1 {
-	font-size: 120%;
-	padding-bottom: 8px;
+
+main a {
+  color: #c91c30;
 }
-#wrap #main h2 {
-	font-size: 100%;
-	padding-bottom: 8px;
+
+main > article {
+  grid-column: span 8; /* The article takes up two-thirds (8 out of 12 columns) */
+}
+
+main > aside {
+  grid-column: span 4; /* This ensures the aside takes up one-third of the grid */
+
+  display: flex; /* Activates flexbox layout */
+  justify-content: center; /* Centers content horizontally in the flex container */
+  align-items: center; /* Centers content vertically in the flex container */
+  flex-direction: column; /* Stacks flex items vertically. Change to 'row' if you prefer horizontal layout */
+  text-align: center; /* Centers text inside the flex items, useful for inline or inline-block elements */
+  height: 100%; /* You might need this if you want to fully center inside the grid cell, depending on your layout */
+}
+article p, figure img,
+aside p {
+  padding-bottom: 12px;
+}
+
+aside .sig {
+  width: 100%;
+  text-align: right; /* Aligns text to the right for elements with class 'sig' */
+}
+
+.teachers {
+  display: flex;
+  gap: 16px;
+  flex-direction: column; /* Aligns items in a row */
+  justify-content: space-around; /* Distributes items evenly with equal space around them */
+}
+
+.homepage main > article {
+  grid-column: span 6; /* The article takes up two-thirds (8 out of 12 columns) */
+}
+
+.homepage main > aside {
+  grid-column: span 6; /* This ensures the aside takes up one-third of the grid */
+}
+
+section.teachers {
+  grid-column: span 12;
+  display: flex;
+  gap: 16px;
+  flex-direction: column; /* Aligns items in a row */
+  justify-content: space-around; /* Distributes items evenly with equal space around them */
+}
+
+section.teachers article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates a 3-column grid */
+  gap: 16px; /* Sets the gap between grid items */
+}
+
+section.teachers article > figure {
+  grid-column-start: 3;
+}
+section.teachers article > section {
+  grid-column: span 2;
+  grid-row-start: 1;
+}
+
+footer hr {
+  margin: 8px 50px;
+}
+
+main h1 {
+  font-size: 120%;
+  padding-bottom: 8px;
+}
+main h2 {
+  font-size: 100%;
+  padding-bottom: 8px;
 }
 marquee p {
-	color: #FF6900;
+  color: #ff6900;
 }
 
-
-
-#main p {
-	padding-bottom: 12px;
+main a {
+  color: #c91c30;
 }
-#main a {
-	color: #c91c30;
+main a:hover {
+  color: #64965a;
 }
-#main a:hover {
-	color: #64965a;
-}
-#wrap #main table {
-	border-collapse: collapse;
-	margin-bottom: 10px;
+main table {
+  border-collapse: collapse;
+  margin-bottom: 10px;
 }
 
-#wrap #main table th {
-	background: #ddd;
-	color: #c91c30;
-	border: 1px solid #ccc;
+main table th {
+  background: #ddd;
+  color: #c91c30;
+  border: 1px solid #ccc;
 }
-#wrap #main table td {
-	border: 1px solid #ccc;
-}
-
-
-#main .floatRight h2 {
-	font-size: 110%;
-	text-align: center;
-	color: #c91c30;
+main table td {
+  border: 1px solid #ccc;
 }
 
-#main #testimonials {
-	width: 60%;
-	margin-right: auto;
-	margin-left: auto;
-	background: #eee;
-	border: 1px solid #ddd;
-	padding: 5px 20px;
-	margin-bottom: 20px;
-	font-size: 90%;
+main #testimonials {
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  background: #eee;
+  border: 1px solid #ddd;
+  padding: 5px 20px;
+  margin-bottom: 20px;
+  font-size: 90%;
 }
-#main #rightCol {
-	float: right;
-	width: 30%;
-	margin-right: 10px;
-	margin-top: 30px;
-}
-#main #leftCol {
-	float: left;
-	width: 60%;
-}
-#main #rightColH {
-	float: right;
-	width: 48%;
-	margin-right: 10px;
-}
-#main #leftColH {
-	float: left;
-	width: 50%;
-}
-
-
-
 
 hr {
-	margin-top: 5px;
-	margin-bottom: 5px;
-	color: #73afd2;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #73afd2;
 }
-
-
 
 #footer {
-	font-size: 80%;
-	clear: both;
+  font-size: 80%;
+  clear: both;
 }
 #footer p {
-	padding-left: 50px;
-	padding-top: 0px;
-	padding-bottom: 15px;
+  padding-left: 50px;
+  padding-top: 0px;
+  padding-bottom: 15px;
 }
 
 .blue {
-	color: #73afd2;
-	border-bottom: 5px solid #73afd2;
+  color: #73afd2;
+  border-bottom: 5px solid #73afd2;
 }
 .orange {
-	color: #f06d1a;
-	border-bottom: 5px solid #f06d1a;
+  color: #f06d1a;
+  border-bottom: 5px solid #f06d1a;
 }
 .green {
-	color: #64965a;
-	border-bottom: 5px solid #64965a;
+  color: #64965a;
+  border-bottom: 5px solid #64965a;
 }
 .red {
-	color: #c91c30;
-	border-bottom: 5px solid #c91c30;
+  color: #c91c30;
+  border-bottom: 5px solid #c91c30;
 }
 .floatRight {
-	float: right;
-	padding-left: 25px;
-	padding-bottom: 25px;
+  float: right;
+  padding-left: 25px;
+  padding-bottom: 25px;
 }
 .sig {
-	font-weight: bold;
-	padding: 0px;
+  font-weight: bold;
+  padding: 0px;
 }
 .clear {
-	clear: both;
+  clear: both;
 }
 .blueH {
-	color: #73afd2;
+  color: #73afd2;
 }
 .orangeH {
-	color: #f06d1a;
+  color: #f06d1a;
 }
 .greenH {
-	color: #64965a;
+  color: #64965a;
 }
 
 .redH {
-	color: #c91c30;
+  color: #c91c30;
 }
 .blueH {
-	color: #73afd2;
+  color: #73afd2;
 }
 
 .tag {
-	font-size: 150%;
-	color: #c91c30;
-	font-weight: bold;
+  font-size: 150%;
+  color: #c91c30;
+  font-weight: bold;
 }
 .quote {
-	font-style: italic;
+  font-style: italic;
 }
 .alignR {
-	text-align: right;
-	clear: right;
+  text-align: right;
+  clear: right;
 }
-.alignC {
-	text-align: center;
-}
+
 .framed {
-	padding: 10px;
+  padding: 10px;
 }
 .greenBord {
-	border: 5px solid #64965a;
+  border: 5px solid #64965a;
 }
 .orangeBord {
-	border: 5px solid #f06d1a;
+  border: 5px solid #f06d1a;
 }
 .blueBord {
-	border: 5px solid #73afd2;
+  border: 5px solid #73afd2;
 }
 .redBord {
-	border: 5px solid #c91c30;
+  border: 5px solid #c91c30;
 }
 .copyright {
-	font-size: 75%;
+  font-size: 75%;
 }
 #footer a {
-	color: #000;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+
+  body {
+
+    padding: 4px;
+  }
+
+  .logo {
+    line-height: 1.1;
+    margin-bottom: 1.4rem;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  nav ul {
+    /* Specific class for testing */
+    flex-direction: column;
+    gap: 1em;
+  }
+  nav ul li {
+    width: 100%;
+    text-align: left;
+  }
+  nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 0.2em 0;
+    margin: 0.1em 0;
+  }
+
+  .burger-menu {
+    display: block;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    cursor: pointer;
+    padding: 10px;
+    background: linear-gradient(
+      to right,
+      #b39ddb,
+      /* light pastel purple */ #9fa8da,
+      /* light pastel blue */ #a5d6a7,
+      /* light pastel green */ #e6ee9c,
+      /* light pastel yellow */ #ffe082,
+      /* light pastel orange */ #ffab91 /* light pastel red */
+    );
+    width: 45px;
+    height: 45px; /* Adjust for better visibility if necessary */
+    margin: 6px 0; /* Keep original spacing or adjust as needed */
+    transition: 0.4s; /* Keep the transition effect */
+    border: 1px solid #949990; /* Adjust thickness as needed */
+  }
+  main > article, .homepage main > article {
+    grid-column: span 12; /* The article takes up two-thirds (8 out of 12 columns) */
+  }
+
+  main > aside, .homepage  main > aside {
+    grid-column: span 12; /* This ensures the aside takes up one-third of the grid */
+  }
+
+  section.teachers article {
+    display: grid;
+    grid-template-columns:  1fr;
+    
+  }
+  
+
+  section.teachers article > figure {
+    grid-column-start: 1;
+    grid-column-row: 1;
+    justify-self: center; /* Horizontally center the item within its cell */
+    align-self: center; /* Vertically center the item within its cell */
+  }
+  section.teachers article > section {
+    grid-row: 2;
+  }
 }
