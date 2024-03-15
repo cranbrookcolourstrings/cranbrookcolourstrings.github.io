@@ -238,11 +238,11 @@ hr {
   color: #73afd2;
 }
 
-#footer {
+footer {
   font-size: 80%;
   clear: both;
 }
-#footer p {
+footer p {
   padding-left: 50px;
   padding-top: 0px;
   padding-bottom: 15px;
@@ -324,7 +324,7 @@ hr {
 .copyright {
   font-size: 75%;
 }
-#footer a {
+footer a {
   color: #000;
 }
 
@@ -333,6 +333,22 @@ hr {
   body {
 
     padding: 4px;
+  }
+
+  main {
+    padding: 8px 8px 0px 8px;
+    grid-template-columns: repeat(12, 1fr); /* Creates a 12-column grid */
+    gap: 16px; /* Sets the gap between grid items */
+  }
+
+  footer hr {
+    margin: 8px;
+  }
+
+  footer p {
+    padding-left: 8px;
+    padding-top: 0px;
+    padding-bottom: 12px;
   }
 
   .logo {
@@ -347,7 +363,9 @@ hr {
   #menu {
     display: none;
   }
-
+  nav {
+    padding: 8px;
+  }
   nav ul {
     /* Specific class for testing */
     flex-direction: column;
