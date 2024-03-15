@@ -132,6 +132,15 @@ aside p {
   padding-bottom: 12px;
 }
 
+.ensemble {
+  width: 95%;
+  rgin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+
 aside .sig {
   width: 100%;
   text-align: right; /* Aligns text to the right for elements with class 'sig' */
