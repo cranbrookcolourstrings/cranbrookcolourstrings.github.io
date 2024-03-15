@@ -100,18 +100,7 @@ nav ul li a {
   text-decoration: none;
 }
 
-#topNav ul li {
-  display: inline;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-#topNav ul li a {
-  font-weight: bold;
-  text-decoration: none;
-}
-#topNav ul li a:hover {
-  color: #03c;
-}
+
 
 main {
   display: grid;
@@ -341,6 +330,11 @@ footer a {
     gap: 16px; /* Sets the gap between grid items */
   }
 
+  .logo {
+
+    font-size: 4.8em; 
+  }
+
   footer hr {
     margin: 8px;
   }
@@ -385,10 +379,9 @@ footer a {
   .burger-menu {
     display: block;
     position: absolute;
-    top: 16px;
-    left: 16px;
+    top: 12px;
+    left: 12px;
     cursor: pointer;
-    padding: 10px;
     background: linear-gradient(
       to right,
       #b39ddb,
@@ -398,12 +391,15 @@ footer a {
       /* light pastel yellow */ #ffe082,
       /* light pastel orange */ #ffab91 /* light pastel red */
     );
-    width: 45px;
-    height: 45px; /* Adjust for better visibility if necessary */
-    margin: 6px 0; /* Keep original spacing or adjust as needed */
+
     transition: 0.4s; /* Keep the transition effect */
     border: 1px solid #949990; /* Adjust thickness as needed */
   }
+
+  .burger-menu i {
+    margin: 16px 4px; /* Space between the icon and the text */
+    font-size: 24px; /* Large icon size */
+}
   main > article, .homepage main > article {
     grid-column: span 12; /* The article takes up two-thirds (8 out of 12 columns) */
   }
