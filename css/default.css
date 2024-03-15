@@ -389,8 +389,9 @@ footer a {
     display: block;
     position: absolute;
     top: 12px;
-    left: 12px;
+    right: 12px;
     cursor: pointer;
+    padding: 0px;
     background: linear-gradient(
       to right,
       #b39ddb,
@@ -406,7 +407,7 @@ footer a {
   }
 
   .burger-menu i {
-    margin: 16px 4px; /* Space between the icon and the text */
+    margin: 16px 12px; /* Space between the icon and the text */
     font-size: 24px; /* Large icon size */
 }
   main > article, .homepage main > article {
